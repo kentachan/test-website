@@ -1,4 +1,25 @@
 
+/* PC表示用（デフォルト） */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+}
+nav {
+  text-align: center;
+}
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+/* スマホ用（画面幅600px以下） */
 @media screen and (max-width: 600px) {
   body {
     font-size: 1.1em;
