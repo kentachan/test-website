@@ -1,41 +1,83 @@
 
-/* PC表示用（デフォルト） */
-body {
-  font-family: sans-serif;
+/* リセットと基本設定 */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
 }
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 2em;
 }
+
+/* ヘッダー */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+}
+.logo-text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* ナビゲーション */
 nav {
+  background-color: #f2f2f2;
+  padding: 1em 0;
   text-align: center;
 }
 nav a {
-  margin: 0 1em;
+  margin: 0 1.2em;
   text-decoration: none;
-  color: #333;
+  color: #0077cc;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* スマホ用（画面幅600px以下） */
+/* セクション */
+section {
+  margin-bottom: 2em;
+}
+
+/* フッター */
+footer {
+  background-color: #f0f0f0;
+  color: #555;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
+/* 画像 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* スマホ対応 */
 @media screen and (max-width: 600px) {
   body {
-    font-size: 1.1em;
+    font-size: 1.05em;
+    padding: 0.5em;
+  }
+  .wrapper {
     padding: 1em;
   }
   nav a {
     display: block;
     margin: 0.5em 0;
-  }
-  .wrapper {
-    padding: 0 1em;
-  }
-  header img,
-  .logo-text {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
   }
 }
