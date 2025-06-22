@@ -6,22 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>クリーンサービス和</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background-color: #ffffff;
       color: #333;
     }
-    .container {
+    .wrapper {
       max-width: 960px;
       margin: 0 auto;
     }
     header {
-      background-color: #e0ecf8;
+      background-color: #d0e1f9;
       padding: 10px 20px;
+    }
+    .header-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
     }
     .logo {
@@ -44,19 +49,14 @@
       text-decoration: none;
       font-size: 15px;
     }
-    .menu-links {
-      display: flex;
-      gap: 20px;
-    }
-    .main {
+    .main-visual {
       text-align: center;
-      padding: 30px 10px;
+      padding: 30px 0;
     }
-    .main img {
+    .main-visual img {
       max-width: 100%;
       height: auto;
-      max-height: 300px;
-      border-radius: 5px;
+      border-radius: 6px;
     }
     @media (max-width: 768px) {
       .menu-links {
@@ -80,21 +80,23 @@
   </script>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <header>
-      <div class="logo">クリーンサービス和</div>
-      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-      <nav class="menu-links" id="menu">
-        <a href="index.html">トップ</a>
-        <a href="company.html">会社案内</a>
-        <a href="business.html">事業案内</a>
-        <a href="recruit.html">採用情報</a>
-        <a href="contact.html">お問い合わせ</a>
-      </nav>
+      <div class="header-inner">
+        <div class="logo">クリーンサービス和</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="menu-links" id="menu">
+          <a href="index.html">トップ</a>
+          <a href="company.html">会社案内</a>
+          <a href="business.html">事業案内</a>
+          <a href="recruit.html">採用情報</a>
+          <a href="contact.html">お問い合わせ</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="main">
-      <img src="https://placehold.co/960x250/e0ecf8/ffffff?text=クリーンサービス和" alt="メイン画像" />
+    <div class="main-visual">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8d856ed70b?auto=format&fit=crop&w=1200&q=80" alt="清掃業のイメージ画像" />
     </div>
   </div>
 </body>
