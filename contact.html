@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>クリーンサービス和</title>
   <link rel="stylesheet" href="css/style.css">
@@ -21,118 +20,21 @@
   nav a:hover {
     text-decoration: underline;
   }
-
-
-  @media screen and (max-width: 600px) {
-    nav {
-      padding: 10px 0;
-    }
-    nav a {
-      display: block;
-      margin: 6px 0;
-      font-size: 16px;
-    }
-    .wrapper {
-      padding: 0 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-    }
-  }
-
-
-  @media screen and (min-width: 601px) {
-    .menu-icon {
-      display: none !important;
-    }
-    .menu-links {
-      display: inline-block !important;
-    }
-  }
 </style>
 
 </head>
 <body>
 <div class="wrapper">
   <header>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="logo-text">Clean Service Kazu</div>
     
-
-<style>
-  .navbar {{
-    background-color: #4A89DC;
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
-    text-align: center;
-  }}
-  .navbar a {{
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-  }}
-  .menu-icon {{
-    display: none;
-    font-size: 28px;
-    color: white;
-    position: absolute;
-    left: 15px;
-    top: 10px;
-    cursor: pointer;
-  }}
-  .menu-links {{
-    display: inline-block;
-  }}
-  @media screen and (max-width: 600px) {{
-    .menu-links {{
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #4A89DC;
-    }}
-    .menu-links a {{
-      display: block;
-      padding: 12px;
-    }}
-    .menu-icon {{
-      display: block;
-    }}
-  }}
-
-
-  @media screen and (min-width: 601px) {
-    .menu-icon {
-      display: none !important;
-    }
-    .menu-links {
-      display: inline-block !important;
-    }
-  }
-</style>
-<script>
-  function toggleMenu() {{
-    var links = document.getElementById("menuLinks");
-    if (links.style.display === "block") {{
-      links.style.display = "none";
-    }} else {{
-      links.style.display = "block";
-    }}
-  }}
-</script>
-<div class="navbar">
-  <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
-  <div class="menu-links" id="menuLinks">
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社案内</a>
-    <a href="business.html">事業案内</a>
-    <a href="recruit.html">採用情報</a>
-    <a href="contact.html">お問い合わせ</a>
-  </div>
-</div>
-
+<nav>
+  <a href="/index.html">トップ</a>
+  <a href="/company.html">会社案内</a>
+  <a href="/business.html">事業案内</a>
+  <a href="/recruit.html">採用情報</a>
+  <a href="/contact.html">お問い合わせ</a>
+</nav>
 
   </header>
   <img src="images/hero.jpg" class="hero" alt="Main Visual">
