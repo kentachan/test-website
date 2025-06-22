@@ -1,190 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>クリーンサービス和</title>
-  <link rel="stylesheet" href="css/style.css">
-
-<style>
-  nav {
-    background-color: #4A89DC;
-    padding: 10px 0;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 13.5px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>お問い合わせ</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
 </head>
 <body>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .navbar {
-    background-color: #4A89DC;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    flex-wrap: wrap;
-  }
-  .navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .navbar .menu-icon {
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-  }
-  .navbar .menu-links {
-    display: flex;
-    gap: 15px;
-  }
-  .navbar .menu-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px;
-  }
-  @media (max-width: 600px) {
-    .navbar .menu-icon {
-      display: block;
-    }
-    .navbar .menu-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #4A89DC;
-    }
-    .navbar .menu-links.active {
-      display: flex;
-    }
-  }
-</style>
-<script>
-  function toggleMenu() {
-    const links = document.getElementById("menuLinks");
-    links.classList.toggle("active");
-  }
-</script>
-<div class="navbar">
-  <div class="logo">クリーンサービス和</div>
-  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-  <div class="menu-links" id="menuLinks">
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社案内</a>
-    <a href="business.html">事業案内</a>
-    <a href="recruit.html">採用情報</a>
-    <a href="contact.html">お問い合わせ</a>
-  </div>
-</div>
-
-<div class="wrapper">
-  <header>
-    <div class="logo-text">Clean Service Kazu</div>
+  <div class="wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="logo">クリーンサービス和</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="menu-links" id="menu">
+          <a href="index.html">トップ</a>
+          <a href="company.html">会社案内</a>
+          <a href="business.html">事業案内</a>
+          <a href="recruit.html">採用情報</a>
+          <a href="contact.html">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
     
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .navbar {
-    background-color: #4A89DC;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    flex-wrap: wrap;
-  }
-  .navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .navbar .menu-icon {
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-  }
-  .navbar .menu-links {
-    display: flex;
-    gap: 15px;
-  }
-  .navbar .menu-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px;
-  }
-  @media (max-width: 600px) {
-    .navbar .menu-icon {
-      display: block;
-    }
-    .navbar .menu-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #4A89DC;
-    }
-    .navbar .menu-links.active {
-      display: flex;
-    }
-  }
-</style>
-<script>
-  function toggleMenu() {
-    const links = document.getElementById("menuLinks");
-    links.classList.toggle("active");
-  }
-</script>
-<div class="navbar">
-  <div class="logo">クリーンサービス和</div>
-  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-  <div class="menu-links" id="menuLinks">
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社案内</a>
-    <a href="business.html">事業案内</a>
-    <a href="recruit.html">採用情報</a>
-    <a href="contact.html">お問い合わせ</a>
+    <div class="content">
+      <h2>お問い合わせ</h2>
+      <form>
+        <label>お名前：<br><input type="text" name="name" style="width:100%; max-width:500px;"></label><br><br>
+        <label>メールアドレス：<br><input type="email" name="email" style="width:100%; max-width:500px;"></label><br><br>
+        <label>お問い合わせ内容：<br><textarea name="message" rows="6" style="width:100%; max-width:500px;"></textarea></label><br><br>
+        <input type="submit" value="送信">
+      </form>
+    </div>
   </div>
-</div>
-
-
-  </header>
-  <img src="images/hero.jpg" class="hero" alt="Main Visual">
-  
-<main>
-  <h1>お問い合わせ</h1>
-  <form class="contact-form">
-    <label for="name">お名前</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">メールアドレス</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">お問い合わせ内容</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
-
-    <button type="submit">送信</button>
-  </form>
-</main>
-
-  <footer>&copy; 2025 クリーンサービス和</footer>
-</div>
 </body>
 </html>
